@@ -1,0 +1,131 @@
+// Variables
+$primary-color: #a0cfff;
+$secondary-color: #fff47e;
+$text-color: #212529;
+$light-bg-color: #f8f9fa;
+$border-radius: 0.5rem;
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$padding: 1rem;
+$margin-bottom: 1rem;
+
+// Mixins
+@mixin rounded-box {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+@mixin responsive-padding($default-padding: 1rem, $lg-padding: 2rem) {
+    padding: $default-padding;
+    @media (min-width: 992px) {
+        padding: $lg-padding;
+    }
+}
+
+// General Styles
+body {
+    background: linear-gradient(45deg, $primary-color, $secondary-color); // Gradient from dark blue to orange
+    color: $light-bg-color;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    color: $primary-color;
+}
+
+// Header Section
+header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+}
+
+// About Section
+.about-section {
+    .profile-image {
+        figure {
+            img {
+                @include rounded-box;
+                width: 100%;
+                height: auto;
+            }
+
+            figcaption {
+                margin-top: 0.5rem;
+                font-size: 0.9rem;
+                color: darken($text-color, 20%);
+            }
+        }
+    }
+
+    .about-content {
+        p {
+            margin-bottom: $margin-bottom;
+            font-size: 1.125rem;
+            line-height: 1.6;
+
+            strong {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+// Hobbies Section
+.hobbies-section {
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: $margin-bottom;
+    }
+
+    p {
+        margin-bottom: $margin-bottom;
+    }
+
+    .list-group-item {
+        font-size: 1rem;
+        padding: $padding;
+        background-color: $light-bg-color;
+        border: none;
+
+        &:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+// Surfing Image Section
+.surfing-image-section {
+    text-align: center;
+
+    figure {
+        img {
+            @include rounded-box;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        figcaption {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: darken($text-color, 20%);
+        }
+    }
+}
+
+// Footer Section
+.footer-section {
+    background-color: $primary-color;
+    color: $light-bg-color;
+    padding: $padding;
+
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+}

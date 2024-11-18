@@ -1,0 +1,82 @@
+body {
+  background: linear-gradient(45deg, #a0cfff, #fff47e);
+  color: #f8f9fa;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #a0cfff;
+}
+
+header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.about-section .profile-image figure img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+}
+.about-section .profile-image figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: black;
+}
+.about-section .about-content p {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+.about-section .about-content p strong {
+  color: #a0cfff;
+}
+
+.hobbies-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.hobbies-section p {
+  margin-bottom: 1rem;
+}
+.hobbies-section .list-group-item {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border: none;
+}
+.hobbies-section .list-group-item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.surfing-image-section {
+  text-align: center;
+}
+.surfing-image-section figure img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+.surfing-image-section figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.footer-section {
+  background-color: #a0cfff;
+  color: #f8f9fa;
+  padding: 1rem;
+}
+.footer-section p {
+  margin: 0;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=styles.css.map */
